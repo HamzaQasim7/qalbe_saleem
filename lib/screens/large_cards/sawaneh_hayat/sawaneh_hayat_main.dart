@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:qalbe_saleem/constants/strings/app_strings.dart';
 
 import '../../../constants/images/app_images.dart';
-import '../manqabat/widgets/audio_title_text.dart';
-import '../manqabat/widgets/bottom_widget.dart';
-import '../manqabat/widgets/header_widget.dart';
-import '../manqabat/widgets/image_widget.dart';
+import '../../small_cards/manqabat/widgets/audio_title_text.dart';
+import '../../small_cards/manqabat/widgets/bottom_widget.dart';
+import '../../small_cards/manqabat/widgets/header_widget.dart';
+import '../../small_cards/manqabat/widgets/image_widget.dart';
 
-class MuqadimaAlkitabMain extends StatelessWidget {
-  const MuqadimaAlkitabMain({super.key});
-  final String routeName = "/muqadima_main";
+class SawanehHayatMainScreen extends StatelessWidget {
+  const SawanehHayatMainScreen({super.key});
+
+  final String routeName = "/sawaneh_hayat";
+
   @override
   Widget build(BuildContext context) {
     final md = MediaQuery.of(context).size;
@@ -26,23 +28,23 @@ class MuqadimaAlkitabMain extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   md: md,
-                  title: 'قلب سليم',
+                  title: KAppTexts.lCardTitle2,
                   space: 50,
                 ),
               ),
               const SizedBox(height: 30),
               ImageWidget(
                 md: md,
-                imageUrl: KAppImages.muqadimaBook,
+                imageUrl: KAppImages.stars,
               ),
               const SizedBox(height: 40),
               const AudioTitleText(
-                title: KAppTexts.muqadima_kitab,
-                subTitle: KAppTexts.muqadimaAlkitabAuther,
+                title: KAppTexts.lCardTitle1,
+                subTitle: KAppTexts.munqabatAuther,
               ),
               const AudioPlayerWidget(),
               BottomBody(onTap: () {
-                Navigator.pushNamed(context, '/muqadima_detail');
+                Navigator.pushNamed(context, '/sawaneh_hayat_detail');
               })
             ],
           ),

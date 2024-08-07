@@ -126,7 +126,7 @@ class CardWidget extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 20,
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.grey,
           child: Text(
             index,
             style: const TextStyle(color: Colors.white, fontSize: 18),
@@ -205,8 +205,8 @@ class ConnectorLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: 2,
+      height: 30,
+      width: 3,
       color: Colors.grey,
       margin: const EdgeInsets.only(left: 40, right: 40),
     );

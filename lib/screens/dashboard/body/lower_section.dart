@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:qalbe_saleem/extensions/padding_ext.dart';
 import 'package:qalbe_saleem/extensions/sized_box_ext.dart';
 import 'package:qalbe_saleem/screens/dashboard/body/text_custom_container.dart';
+import 'package:qalbe_saleem/screens/landing_screen/main.dart';
 
 class LowerSection extends StatelessWidget {
   const LowerSection({
@@ -62,15 +63,21 @@ class LowerSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Container(
-                width: screenHeight * 0.2,
-                height: screenWidth * 0.25,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(screenWidth * 0.04),
-                ),
-                child: Image.asset(
-                  'assets/dashboard/png/shajra-nasbia.png',
-                  fit: BoxFit.cover,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const MyScreen()));
+                },
+                child: Container(
+                  width: screenHeight * 0.2,
+                  height: screenWidth * 0.25,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(screenWidth * 0.04),
+                  ),
+                  child: Image.asset(
+                    'assets/dashboard/png/shajra-nasbia.png',
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Container(

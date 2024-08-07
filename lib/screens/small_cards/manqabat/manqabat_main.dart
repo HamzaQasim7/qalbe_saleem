@@ -41,7 +41,9 @@ class ManqabatMain extends StatelessWidget {
                 subTitle: KAppTexts.munqabatAuther,
               ),
               const AudioPlayerWidget(),
-              const BottomBody()
+              BottomBody(onTap: () {
+                Navigator.pushNamed(context, '/munqabat_detail');
+              })
             ],
           ),
         ),

@@ -4,6 +4,7 @@ class KAppTexts {
   static const String izhar_tashhakor = 'اظہار تشکر';
   static const String muqadima_kitab = 'مقدمہ الکتاب';
   static const String paysh_alfaz = 'پیش لفظ';
+
   static const String munqabatAuther =
       'حضرت سّید محمد ظفر مشہدی قادری رحمة اهلل عليه';
   static const String izharTashkorAuther = 'سید محمد فراز شاہ عفی عنہ';
@@ -11,11 +12,16 @@ class KAppTexts {
       'فقیر الی اهلل ابو الحقائق پیر سّید امانت علی شاہ چشتی نظامی';
 
   static const String pesheLafazAuther = 'عبد الحمید قادری عفی عنہ';
+  static const String aqwalOIrshadatAuther = 'مشہدی قادری رحمة الله تعالى عليه';
 
-  /// Dashboard screen small card titles
+  /// Dashboard screen small card titles and subtitles
+  static const String lCardTitle1 = 'سوانح حیات';
   static const String reshahatQalam = 'از رشحاتِ قلم:';
-  static const String authorName1 =
-      'حضرت سیّد محمد ظفر مشہدی قادری رحمة الله عليه';
+  static const String lCardTitle2 = 'قلبِ سلیم';
+  static const String lCardTitle3 = 'اقوال و ارشاداِت عالیہ';
+  static const String lCardSubTitle3 =
+      'امام الاولیاء حضرت پیر سیّد محمّد عبد  الله  شاہ';
+  static const String lCardTitle4 = 'الفراق';
 
   /// Dashboard screen bottom container strings
   static const String copyRight = "© 2021";

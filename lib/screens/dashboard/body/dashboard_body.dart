@@ -68,32 +68,43 @@ class BodyDashBoardScreen extends StatelessWidget {
           context.sizedBoxHeight(0.02),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.03),
-            child: const Column(
+            child: Column(
               children: [
                 LargeCustomContainer(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/sawaneh_hayat');
+                  },
                   imageURl: 'assets/dashboard/png/1.png',
-                  heading: 'سوانح حیات',
-                  subheading: 'از رشحاتِ قلم:',
-                  authorName: 'حضرت سیّد محمد ظفر مشہدی قادری رحمة الله عليه',
+                  heading: KAppTexts.lCardTitle1,
+                  subheading: KAppTexts.reshahatQalam,
+                  authorName: KAppTexts.munqabatAuther,
                 ),
                 LargeCustomContainer(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/qalbe_saleem_main');
+                  },
                   imageURl: 'assets/dashboard/png/2.png',
-                  heading: 'قلب سلیم',
-                  subheading: 'از رشحاتِ قلم:',
-                  authorName: 'سیّد محمد فراز شاہ مشہدی قادری عفی عنہ',
+                  heading: KAppTexts.lCardTitle2,
+                  subheading: KAppTexts.reshahatQalam,
+                  authorName: KAppTexts.izharTashkorAuther,
                 ),
                 LargeCustomContainer(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/aqwal_o_irshadat');
+                  },
                   imageURl: 'assets/dashboard/png/3.png',
-                  heading: 'اقوال و ارشاداتِ عالیہ',
-                  subheading:
-                      'امام الاولیاء حضرت پیر سیّد محمّد عبد  الله  شاہ',
-                  authorName: 'مشہدی قادری رحمة الله تعالى عليه',
+                  heading: KAppTexts.lCardTitle3,
+                  subheading: KAppTexts.lCardSubTitle3,
+                  authorName: KAppTexts.aqwalOIrshadatAuther,
                 ),
                 LargeCustomContainer(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/alfiraq_main');
+                  },
                   imageURl: 'assets/dashboard/png/4.png',
-                  heading: 'الفراق',
-                  subheading: 'از رشحاتِ قلم',
-                  authorName: 'حضرت سیّد محمد ظفر قادری رحمة الله ليه',
+                  heading: KAppTexts.lCardTitle4,
+                  subheading: KAppTexts.reshahatQalam,
+                  authorName: KAppTexts.munqabatAuther,
                 ),
               ],
             ),

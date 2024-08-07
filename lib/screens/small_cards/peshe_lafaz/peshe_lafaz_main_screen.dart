@@ -43,7 +43,9 @@ class PesheLafazMainScreen extends StatelessWidget {
                 subTitle: KAppTexts.pesheLafazAuther,
               ),
               const AudioPlayerWidget(),
-              const BottomBody()
+              BottomBody(onTap: () {
+                Navigator.pushNamed(context, '/peshe_lafaz_detail');
+              })
             ],
           ),
         ),

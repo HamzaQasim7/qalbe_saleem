@@ -64,8 +64,8 @@ class TopHeaderWidget extends StatelessWidget {
                 Text(
                   title,
                   style: const TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.w300,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
                       color: Colors.white),
                 ),
                 const SizedBox(width: 20),

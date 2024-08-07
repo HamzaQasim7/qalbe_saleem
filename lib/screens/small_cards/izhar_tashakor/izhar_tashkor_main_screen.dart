@@ -9,7 +9,9 @@ import '../manqabat/widgets/image_widget.dart';
 
 class IzharTashkorMainScreen extends StatelessWidget {
   const IzharTashkorMainScreen({super.key});
+
   final String routeName = "/izhar_tashkor";
+
   @override
   Widget build(BuildContext context) {
     final md = MediaQuery.of(context).size;
@@ -41,7 +43,9 @@ class IzharTashkorMainScreen extends StatelessWidget {
                 subTitle: KAppTexts.izharTashkorAuther,
               ),
               const AudioPlayerWidget(),
-              const BottomBody()
+              BottomBody(onTap: () {
+                Navigator.pushNamed(context, '/izhar_tashkor_detail');
+              })
             ],
           ),
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qalbe_saleem/constants/strings/app_strings.dart';
+import 'package:qalbe_saleem/constants/images/app_images.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset(KAppTexts.paysh_alfaz),
+        child: Image.asset(KAppImages.pesheLafaz),
       ),
     );
   }

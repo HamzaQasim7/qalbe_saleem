@@ -7,19 +7,16 @@ import '../manqabat_details/qalb_saleem_detail_screen.dart';
 class BottomBody extends StatelessWidget {
   const BottomBody({
     super.key,
+    required this.onTap,
   });
+  final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         GestureDetector(
-          onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (_) => const ManqabatDetailScreen()));
-          },
+          onTap: onTap,
           child: Image.asset(
             'assets/icons/book.png',
             width: 40,
