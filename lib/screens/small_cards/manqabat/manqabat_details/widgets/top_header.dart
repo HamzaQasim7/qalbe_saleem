@@ -6,9 +6,15 @@ class TopHeaderWidget extends StatelessWidget {
   const TopHeaderWidget({
     super.key,
     required this.md,
+    required this.imageUrl,
+    required this.imageColor,
+    required this.title,
   });
 
   final Size md;
+  final String imageUrl;
+  final String title;
+  final Color imageColor;
 
   @override
   Widget build(BuildContext context) {
@@ -17,24 +23,23 @@ class TopHeaderWidget extends StatelessWidget {
       left: 0,
       right: 0,
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(
               children: [
                 Container(
-                  width: 100,
-                  height: 100,
+                  width: md.width * 0.25,
+                  height: md.height * 0.1,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20)),
                   child: Center(
                     child: Image.asset(
-                      'assets/icons/heart_flower.png',
+                      imageUrl,
                       width: 50,
                       height: 50,
-                      color: Colors.blue,
+                      color: imageColor,
                     ),
                   ),
                 ),
@@ -56,9 +61,9 @@ class TopHeaderWidget extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                const Text(
-                  'منقبت',
-                  style: TextStyle(
+                Text(
+                  title,
+                  style: const TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.w300,
                       color: Colors.white),

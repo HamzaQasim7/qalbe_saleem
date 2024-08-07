@@ -3,4 +3,5 @@ class KAppImages {
   static const String heartFlower = 'assets/icons/heart_flower.png';
   static const String muqadimaBook = 'assets/icons/heart_flower.png';
   static const String pesheLafaz = 'assets/icons/heart_flower.png';
+  static const String motive = 'assets/images/svg/motive.svg';
 }

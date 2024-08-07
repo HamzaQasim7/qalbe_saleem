@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:qalbe_saleem/constants/images/app_images.dart';
+import 'package:qalbe_saleem/extensions/sized_box_ext.dart';
 
 import '../../../../../constants/strings/app_strings.dart';
 
@@ -34,12 +37,13 @@ class BodyWidgetContent extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
                 children: [
-                  Image.asset(
-                    'assets/icons/ornaments.png',
-                    width: 100,
-                    height: 100,
-                    color: Colors.black87,
+                  context.sizedBoxHeight(0.02),
+                  SvgPicture.asset(
+                    KAppImages.motive,
+                    height: 40,
+                    width: 40,
                   ),
+                  context.sizedBoxHeight(0.02),
                   const Text(
                     KAppTexts.munqibat,
                     style: TextStyle(
@@ -56,6 +60,13 @@ class BodyWidgetContent extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                  context.sizedBoxHeight(0.02),
+                  SvgPicture.asset(
+                    KAppImages.motive,
+                    height: 40,
+                    width: 40,
+                  ),
+                  context.sizedBoxHeight(0.02),
                 ],
               ),
             ),

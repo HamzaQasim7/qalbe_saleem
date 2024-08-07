@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qalbe_saleem/constants/images/app_images.dart';
+import 'package:qalbe_saleem/constants/strings/app_strings.dart';
 
 import '../../manqabat/manqabat_details/widgets/body_widget.dart';
 import '../../manqabat/manqabat_details/widgets/sub_header.dart';
@@ -20,12 +22,17 @@ class IzharTashkorDetailScreen extends StatelessWidget {
             child: Container(
               width: md.width,
               height: md.height * 0.3,
-              decoration: const BoxDecoration(
-                color: Colors.blue,
+              decoration: BoxDecoration(
+                color: Colors.blue.shade900,
               ),
             ),
           ),
-          TopHeaderWidget(md: md),
+          TopHeaderWidget(
+            md: md,
+            imageUrl: KAppImages.stars,
+            imageColor: Colors.purple.shade900,
+            title: KAppTexts.izhar_tashhakor,
+          ),
           const SubHeaderWidget(),
           BodyWidget(md: md),
         ],

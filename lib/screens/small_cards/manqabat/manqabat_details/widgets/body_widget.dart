@@ -17,7 +17,6 @@ class BodyWidget extends StatelessWidget {
       left: 0,
       right: 0,
       height: md.height,
-      // Adjust the height as needed
       child: CustomScrollView(
         slivers: [
           SliverFillRemaining(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qalbe_saleem/constants/images/app_images.dart';
+import 'package:qalbe_saleem/constants/strings/app_strings.dart';
 import 'package:qalbe_saleem/screens/small_cards/manqabat/manqabat_details/widgets/body_widget.dart';
 import 'package:qalbe_saleem/screens/small_cards/manqabat/manqabat_details/widgets/sub_header.dart';
 import 'package:qalbe_saleem/screens/small_cards/manqabat/manqabat_details/widgets/top_header.dart';
@@ -24,7 +26,12 @@ class ManqabatDetailScreen extends StatelessWidget {
               ),
             ),
           ),
-          TopHeaderWidget(md: md),
+          TopHeaderWidget(
+            md: md,
+            imageUrl: KAppImages.heartFlower,
+            imageColor: Colors.blue,
+            title: KAppTexts.munqibat,
+          ),
           const SubHeaderWidget(),
           BodyWidget(md: md),
         ],

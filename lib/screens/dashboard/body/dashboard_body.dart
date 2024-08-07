@@ -1,3 +1,4 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:qalbe_saleem/extensions/padding_ext.dart';
 import 'package:qalbe_saleem/extensions/sized_box_ext.dart';
@@ -25,7 +26,7 @@ class BodyDashBoardScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: screenHeight * 0.05),
+          SizedBox(height: screenHeight * 0.07),
           const SlidingCardsView(),
           SizedBox(height: screenHeight * 0.02),
           Padding(
