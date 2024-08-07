@@ -23,6 +23,114 @@ class KAppTexts {
       'امام الاولیاء حضرت پیر سیّد محمّد عبد  الله  شاہ';
   static const String lCardTitle4 = 'الفراق';
 
+  /// Shajerai Qadiria Nasebia
+  static const String prophetMuhammad =
+      'خاتم النبّیین حضرت سّیدنا محمد رسول الله صلی الله عليه وآله وسلم';
+
+  static const String imamAli =
+      'حضرت سّیدنا علی المرتضٰی کّرم الله تعالى وجہہ الکریم';
+
+  static const String imamHussain =
+      'امام عالی مقام، سّیدالشہداء، حضرت سّیدنا امام حسین رضي اهلل تعالى عنه';
+
+  static const String imamAliZainulAbidin =
+      'حضرت سّیدنا امام علی زین العابدین رضي اهلل تعالى عنه';
+
+  static const String imamMuhammadBaqir =
+      'حضرت سّیدنا امام محمد باقر رضي اهلل تعالى عنه';
+
+  static const String imamJafarSadiq =
+      'حضرت سّیدنا امام جعفر صادق رضي اهلل تعالى عنه';
+
+  static const String imamMusaKazim =
+      'حضرت سّیدنا امام موسٰی کاظم رضي اهلل تعالى عنه';
+
+  static const String imamAliReza =
+      'حضرت سّیدنا امام علی رضا رضي اهلل تعالى عنه';
+
+  static const String sheikhMarufKarkhi =
+      'حضرت شیخ معروف کرخی رحمة اهلل تعالى عليه';
+
+  static const String sheikhSariSaqati =
+      'حضرت شیخ سری سقطی رحمة اهلل تعالى عليه';
+
+  static const String sheikhJunaidBaghdadi =
+      'حضرت شیخ جنید بغدادی رحمة اهلل تعالى عليه';
+
+  static const String sheikhAbuBakrShibli =
+      'حضرت شیخ ابوبکر شبلی رحمة اهلل تعالى عليه';
+
+  static const String sheikhAbuFadlAbdulWahid =
+      'حضرت شیخ ابو الفضل عبد الواحد رحمة اهلل تعالى عليه';
+
+  static const String sheikhAbuFarahTartusi =
+      'حضرت شیخ ابو الفرح طرطوسی رحمة اهلل تعالى عليه';
+
+  static const String sheikhAbuHassanHankari =
+      'حضرت شیخ ابو الحسن الہنکاری رحمة اهلل تعالى عليه';
+
+  static const String sheikhAbuSaeedMubarak =
+      'حضرت شیخ ابو سعید مبارک مخزومی رحمة اهلل تعالى عليه';
+
+  static const String abdulQadirJilani =
+      'حضرت سّیدنا عبدا لقادر جیالنی محبوِب سبحانی رحمة اهلل تعالى عليه';
+
+  static const String sayyedAbdulWahab =
+      'حضرت سّید عبد الوہاب رحمة اهلل تعالى عليه';
+
+  static const String sayyedFadlAllah =
+      'حضرت سّید فضل اللہ رحمة اهلل تعالى عليه';
+
+  static const String sayyedAbuFarahSufi =
+      'حضرت سّید ابو الفرح صوفی رحمة اهلل تعالى عليه';
+
+  static const String sayyedGanjBakhsh =
+      'حضرت سّید گنج بخش رحمة اهلل تعالى عليه';
+
+  static const String sayyedAhmad = 'حضرت سّید احمد رحمة اهلل تعالى عليه';
+
+  static const String sayyedMasood = 'حضرت سّید مسعود رحمة اهلل تعالى عليه';
+
+  static const String sayyedNooruddinAli =
+      'حضرت سّید نور الدین علی رحمة اهلل تعالى عليه';
+
+  static const String sayyedShahMir = 'حضرت سّید شاہ میر رحمة اهلل تعالى عليه';
+
+  static const String sheikhShamsuddinMuhammad =
+      'حضرت شیخ شمس الدین محمد رحمة اهلل تعالى عليه';
+
+  static const String sayyedMuhammadGhous =
+      'حضرت سّید محمد غوث گیالنی رحمة اهلل تعالى عليه';
+
+  static const String sayyedAbdulQadirSani =
+      'حضرت سّید عبدالقادر ثانی رحمة اهلل تعالى عليه';
+
+  static const String sheikhMuhammadBalPir =
+      'حضرت شیخ محمد باال پیر رحمة اهلل تعالى عليه';
+
+  static const String sayyedAbdulQadirThalith =
+      'حضرت سّید عبد القادر ثالث رحمة اهلل تعالى عليه';
+
+  static const String sayyedAbdulWahab2 =
+      'حضرت سّید عبد الوہاب رحمة اهلل تعالى عليه'; // Repeated entry
+
+  static const String sayyedZainulAbidin =
+      'حضرت سّید زین العابدین رحمة اهلل تعالى عليه';
+
+  static const String sayyedAbdulRazzaq =
+      'حضرت سّید عبد الرزاق رحمة اهلل تعالى عليه';
+
+  static const String sayyedMustafa = 'حضرت سّید مصطفٰی رحمة اهلل تعالى عليه';
+
+  static const String sayyedMahmoodJilani =
+      'حضرت سّید محمود جیالنی رحمة اهلل تعالى عليه';
+
+  static const String sayyedMujtaba =
+      'حضرت سّید مجتبٰی المعروف چراغ شاہ رحمة اهلل تعالى عليه';
+
+  static const String sayyedHaiderBakhsh =
+      'حضرت سّید حیدر بخش رحمة اهلل تعالى عليه';
+
   /// Dashboard screen bottom container strings
   static const String copyRight = "© 2021";
   static const String senFirst =
