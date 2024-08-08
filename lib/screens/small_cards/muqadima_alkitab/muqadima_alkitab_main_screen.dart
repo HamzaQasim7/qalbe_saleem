@@ -32,7 +32,7 @@ class MuqadimaAlkitabMain extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const ImageWidget(
-                imageUrl: KAppImages.muqadimaBook,
+                imageUrl: KAppImages.foldBook,
               ),
               const SizedBox(height: 40),
               const AudioTitleText(

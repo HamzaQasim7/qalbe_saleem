@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:qalbe_saleem/screens/small_cards/manqabat/widgets/audio_title_text.dart';
 import 'package:qalbe_saleem/screens/small_cards/manqabat/widgets/bottom_widget.dart';
 
@@ -32,7 +33,7 @@ class ManqabatMain extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const ImageWidget(
-                imageUrl: KAppImages.muqadimaBook,
+                imageUrl: KAppImages.heartFlower,
               ),
               const SizedBox(height: 40),
               const AudioTitleText(

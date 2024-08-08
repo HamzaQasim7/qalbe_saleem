@@ -1,30 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class ImageWidget extends StatelessWidget {
   const ImageWidget({
     super.key,
     required this.imageUrl,
+    this.containerColor,
   });
 
   final String imageUrl;
+  final Color? containerColor;
   @override
   Widget build(BuildContext context) {
     final md = MediaQuery.sizeOf(context);
-    return Container(
-      width: md.width,
-      height: md.height * 0.45,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.blue,
-      ),
-      child: Center(
-        child: Image.asset(
-          color: Colors.white,
-          imageUrl,
-          width: MediaQuery.sizeOf(context).width * 0.5,
-          height: MediaQuery.sizeOf(context).height * 0.3,
-          fit: BoxFit.cover,
-        ),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(2),
+      child: SvgPicture.asset(
+        imageUrl,
+        width: MediaQuery.sizeOf(context).width,
+        height: MediaQuery.sizeOf(context).height * 0.45,
+        // fit: BoxFit.cover,
       ),
     );
   }

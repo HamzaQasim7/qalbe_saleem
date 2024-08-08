@@ -34,7 +34,7 @@ class IzharTashkorMainScreen extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const ImageWidget(
-                imageUrl: KAppImages.muqadimaBook,
+                imageUrl: KAppImages.stars,
               ),
               const SizedBox(height: 40),
               const AudioTitleText(

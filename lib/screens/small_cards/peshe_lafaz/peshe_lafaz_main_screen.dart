@@ -34,7 +34,7 @@ class PesheLafazMainScreen extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const ImageWidget(
-                imageUrl: KAppImages.muqadimaBook,
+                imageUrl: KAppImages.doubleSquares,
               ),
               const SizedBox(height: 40),
               const AudioTitleText(
