@@ -9,12 +9,13 @@ class TopHeaderWidget extends StatelessWidget {
     required this.imageUrl,
     required this.imageColor,
     required this.title,
+    required this.iconColor,
   });
 
   final Size md;
   final String imageUrl;
   final String title;
-  final Color imageColor;
+  final Color imageColor, iconColor;
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +75,7 @@ class TopHeaderWidget extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   buttonColor: Colors.white,
-                  iconColor: Colors.blue,
+                  iconColor: iconColor,
                 ),
               ],
             ),

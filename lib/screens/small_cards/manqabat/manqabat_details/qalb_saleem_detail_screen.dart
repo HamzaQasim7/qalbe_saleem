@@ -31,9 +31,13 @@ class ManqabatDetailScreen extends StatelessWidget {
             imageUrl: KAppImages.heartFlower,
             imageColor: Colors.blue,
             title: KAppTexts.munqibat,
+            iconColor: Colors.blue,
           ),
           const SubHeaderWidget(),
-          BodyWidget(md: md),
+          BodyWidget(
+            md: md,
+            largeText: KAppTexts.munqabatLongText,
+          ),
         ],
       ),
     );

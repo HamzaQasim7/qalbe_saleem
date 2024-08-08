@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:qalbe_saleem/constants/images/app_images.dart';
 import 'package:qalbe_saleem/constants/strings/app_strings.dart';
+import 'package:qalbe_saleem/screens/small_cards/manqabat/manqabat_details/widgets/body_widget.dart';
+import 'package:qalbe_saleem/screens/small_cards/manqabat/manqabat_details/widgets/sub_header.dart';
 import 'package:qalbe_saleem/screens/small_cards/manqabat/manqabat_details/widgets/top_header.dart';
 
-import '../../small_cards/manqabat/manqabat_details/widgets/body_widget.dart';
-import '../../small_cards/manqabat/manqabat_details/widgets/sub_header.dart';
+class QathaTarekhDetailScreen extends StatelessWidget {
+  const QathaTarekhDetailScreen({super.key});
 
-class SawanehHayatDetailScreen extends StatelessWidget {
-  const SawanehHayatDetailScreen({super.key});
-  final String routeName = "/sawaneh_hayat_detail";
+  final String routeName = "/qatha_tarekh_detail";
+
   @override
   Widget build(BuildContext context) {
     final md = MediaQuery.of(context).size;
@@ -23,21 +24,21 @@ class SawanehHayatDetailScreen extends StatelessWidget {
               width: md.width,
               height: md.height * 0.3,
               decoration: const BoxDecoration(
-                color: Colors.tealAccent,
+                color: Color(0xff3A73BE),
               ),
             ),
           ),
           TopHeaderWidget(
             md: md,
-            imageUrl: KAppImages.stars,
-            imageColor: Colors.tealAccent,
-            title: KAppTexts.lCardTitle1,
-            iconColor: Colors.tealAccent,
+            imageUrl: KAppImages.heartFlower,
+            imageColor: const Color(0xff3A73BE),
+            title: KAppTexts.munqibat,
+            iconColor: const Color(0xff3A73BE),
           ),
           const SubHeaderWidget(),
           BodyWidget(
             md: md,
-            largeText: KAppTexts.sawanehHayatLongText,
+            largeText: KAppTexts.qathaTarekh,
           ),
         ],
       ),

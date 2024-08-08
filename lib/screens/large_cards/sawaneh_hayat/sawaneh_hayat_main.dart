@@ -33,8 +33,7 @@ class SawanehHayatMainScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              ImageWidget(
-                md: md,
+              const ImageWidget(
                 imageUrl: KAppImages.stars,
               ),
               const SizedBox(height: 40),

@@ -6,10 +6,11 @@ class BodyWidget extends StatelessWidget {
   const BodyWidget({
     super.key,
     required this.md,
+    required this.largeText,
   });
 
   final Size md;
-
+  final String largeText;
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -29,7 +30,10 @@ class BodyWidget extends StatelessWidget {
                   topRight: Radius.circular(30),
                 ),
               ),
-              child: BodyWidgetContent(md: md),
+              child: BodyWidgetContent(
+                md: md,
+                largeText: largeText,
+              ),
             ),
           ),
         ],

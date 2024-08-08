@@ -99,7 +99,7 @@ class BodyDashBoardScreen extends StatelessWidget {
                 ),
                 LargeCustomContainer(
                   onTap: () {
-                    Navigator.pushNamed(context, '/alfiraq_main');
+                    // Navigator.pushNamed(context, '/alfiraq_main');
                   },
                   imageURl: 'assets/dashboard/png/4.png',
                   heading: KAppTexts.lCardTitle4,
@@ -112,37 +112,48 @@ class BodyDashBoardScreen extends StatelessWidget {
           context.sizedBoxHeight(0.02),
           const LowerSection(),
           context.sizedBoxHeight(0.02),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TextCustomContainer(
+                onPress: () {
+                  Navigator.pushNamed(context, '/bottom_munqabat');
+                },
                 imageURL: 'assets/dashboard/png/bg_text_7.png',
-                text: 'شجرۂ قادریہ نسبیہ',
+                text: KAppTexts.munqibat,
               ),
               TextCustomContainer(
+                onPress: () {
+                  Navigator.pushNamed(context, '/qatha_tarekh_main');
+                },
                 imageURL: 'assets/dashboard/png/bg_text_6.png',
-                text: 'شجرۂ قادریہ نسبیہ',
+                text: KAppTexts.qataeTarekh,
               ),
             ],
           ),
           context.sizedBoxHeight(0.02),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.03),
-            width: double.infinity,
-            height: screenWidth * 0.20,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/dashboard/png/bg_text_9.png'),
+          InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, '/hawashe_hawala_detail');
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.03),
+              width: double.infinity,
+              height: screenWidth * 0.20,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/dashboard/png/bg_text_9.png'),
+                ),
               ),
-            ),
-            child: Center(
-              child: Text(
-                'شجرۂ قادریہ نسبیہ',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: screenWidth * 0.035,
-                  fontWeight: FontWeight.w800,
+              child: Center(
+                child: Text(
+                  KAppTexts.hawasheHawala,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: screenWidth * 0.035,
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
               ),
             ),

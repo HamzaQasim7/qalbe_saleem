@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:qalbe_saleem/constants/strings/app_strings.dart';
 
-import '../../../constants/images/app_images.dart';
-import '../../small_cards/manqabat/widgets/audio_title_text.dart';
-import '../../small_cards/manqabat/widgets/bottom_widget.dart';
-import '../../small_cards/manqabat/widgets/header_widget.dart';
-import '../../small_cards/manqabat/widgets/image_widget.dart';
+import '../../../../constants/images/app_images.dart';
+import '../../../small_cards/manqabat/widgets/audio_title_text.dart';
+import '../../../small_cards/manqabat/widgets/bottom_widget.dart';
+import '../../../small_cards/manqabat/widgets/header_widget.dart';
+import '../../../small_cards/manqabat/widgets/image_widget.dart';
 
-class QalbeSaleemMainScreen extends StatelessWidget {
-  const QalbeSaleemMainScreen({super.key});
+class ShajraNasebiyaMainScreen extends StatelessWidget {
+  const ShajraNasebiyaMainScreen({super.key});
 
-  final String routeName = "/qalbe_saleem_main";
+  final String routeName = "/shajra_nasebiya_main";
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class QalbeSaleemMainScreen extends StatelessWidget {
               ),
               const AudioPlayerWidget(),
               BottomBody(onTap: () {
-                Navigator.pushNamed(context, '/qalbe_saleem_detail');
+                Navigator.pushNamed(context, '/izhar_tashkor_detail');
               })
             ],
           ),

@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 class ImageWidget extends StatelessWidget {
   const ImageWidget({
     super.key,
-    required this.md,
     required this.imageUrl,
   });
 
-  final Size md;
   final String imageUrl;
   @override
   Widget build(BuildContext context) {
+    final md = MediaQuery.sizeOf(context);
     return Container(
       width: md.width,
       height: md.height * 0.45,

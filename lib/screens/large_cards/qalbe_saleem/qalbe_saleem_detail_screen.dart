@@ -30,11 +30,15 @@ class QalbeSaleemDetailScreen extends StatelessWidget {
           TopHeaderWidget(
             md: md,
             imageUrl: KAppImages.stars,
-            imageColor: Colors.purple.shade900,
+            imageColor: Colors.blue.shade900,
             title: KAppTexts.izhar_tashhakor,
+            iconColor: Colors.blue.shade900,
           ),
           const SubHeaderWidget(),
-          BodyWidget(md: md),
+          BodyWidget(
+            md: md,
+            largeText: KAppTexts.qalbeSaleemLongText,
+          ),
         ],
       ),
     );

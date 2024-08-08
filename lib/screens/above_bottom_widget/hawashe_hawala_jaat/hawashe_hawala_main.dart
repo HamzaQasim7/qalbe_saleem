@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:qalbe_saleem/constants/strings/app_strings.dart';
+import 'package:qalbe_saleem/screens/small_cards/manqabat/widgets/audio_title_text.dart';
+import 'package:qalbe_saleem/screens/small_cards/manqabat/widgets/bottom_widget.dart';
 
 import '../../../constants/images/app_images.dart';
-import '../../small_cards/manqabat/widgets/audio_title_text.dart';
-import '../../small_cards/manqabat/widgets/bottom_widget.dart';
+import '../../../constants/strings/app_strings.dart';
 import '../../small_cards/manqabat/widgets/header_widget.dart';
 import '../../small_cards/manqabat/widgets/image_widget.dart';
 
-class QalbeSaleemMainScreen extends StatelessWidget {
-  const QalbeSaleemMainScreen({super.key});
-
-  final String routeName = "/qalbe_saleem_main";
-
+class HawasheHawalaMain extends StatelessWidget {
+  const HawasheHawalaMain({super.key});
+  final String routeName = "/hawashe_hawala_main";
   @override
   Widget build(BuildContext context) {
     final md = MediaQuery.of(context).size;
@@ -28,22 +26,22 @@ class QalbeSaleemMainScreen extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   md: md,
-                  title: KAppTexts.izhar_tashhakor,
+                  title: KAppTexts.munqibat,
                   space: 50,
                 ),
               ),
               const SizedBox(height: 30),
               const ImageWidget(
-                imageUrl: KAppImages.stars,
+                imageUrl: KAppImages.heartFlower,
               ),
               const SizedBox(height: 40),
               const AudioTitleText(
-                title: KAppTexts.izhar_tashhakor,
-                subTitle: KAppTexts.izharTashkorAuther,
+                title: KAppTexts.munqibat,
+                subTitle: KAppTexts.munqabatAuther,
               ),
               const AudioPlayerWidget(),
               BottomBody(onTap: () {
-                Navigator.pushNamed(context, '/qalbe_saleem_detail');
+                Navigator.pushNamed(context, '/munqabat_detail');
               })
             ],
           ),

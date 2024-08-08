@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:qalbe_saleem/constants/strings/app_strings.dart';
 import 'package:qalbe_saleem/extensions/padding_ext.dart';
 import 'package:qalbe_saleem/extensions/sized_box_ext.dart';
 import 'package:qalbe_saleem/screens/dashboard/body/text_custom_container.dart';
-import 'package:qalbe_saleem/screens/landing_screen/main.dart';
+import 'package:qalbe_saleem/screens/shajra_qadiriya/shajra_bottom_widgets/shajra_hasebiya/shajra_hasebiya_main.dart';
 
 class LowerSection extends StatelessWidget {
   const LowerSection({
@@ -39,7 +40,7 @@ class LowerSection extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                'شجرۂ قادریہ',
+                KAppTexts.shajraQadriya,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
@@ -65,8 +66,7 @@ class LowerSection extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const MyScreen()));
+                  Navigator.pushNamed(context, '/shajra_nasabiya');
                 },
                 child: Container(
                   width: screenHeight * 0.2,
@@ -80,42 +80,59 @@ class LowerSection extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                width: screenHeight * 0.2,
-                height: screenWidth * 0.25,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(screenWidth * 0.04),
-                ),
-                child: Image.asset(
-                  'assets/dashboard/png/shajra-hasbia.png',
-                  fit: BoxFit.cover,
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/shajra_hasebiya');
+                },
+                child: Container(
+                  width: screenHeight * 0.2,
+                  height: screenWidth * 0.25,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(screenWidth * 0.04),
+                  ),
+                  child: Image.asset(
+                    'assets/dashboard/png/shajra-hasbia.png',
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ],
           ),
           context.sizedBoxHeight(0.02),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TextCustomContainer(
+                onPress: () {
+                  Navigator.pushNamed(context, '/shajra_nasabiya');
+                },
                 imageURL: 'assets/dashboard/png/bg_text_2.png',
-                text: 'شجرۂ قادریہ نسبیہ',
+                text: KAppTexts.treeOfQadriya,
               ),
               TextCustomContainer(
+                onPress: () {
+                  Navigator.pushNamed(context, '/shajra_hasebiya');
+                },
                 imageURL: 'assets/dashboard/png/bg_text_3.png',
                 text: 'شجرۂ قادریہ نسبیہ',
               ),
             ],
           ),
           context.sizedBoxHeight(0.02),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TextCustomContainer(
+                onPress: () {
+                  Navigator.pushNamed(context, '/shajra_hasebiya_main');
+                },
                 imageURL: 'assets/dashboard/png/bg_text_4.png',
                 text: "شجرۂ قادریہ حسبیہ منظوم مع تضمین ",
               ),
               TextCustomContainer(
+                onPress: () {
+                  Navigator.pushNamed(context, '/shajra_nasebiya_main');
+                },
                 imageURL: 'assets/dashboard/png/bg_text_5.png',
                 text: "شجرۂ قادریہ نسبیہ منظوم مع تضمین ",
               ),

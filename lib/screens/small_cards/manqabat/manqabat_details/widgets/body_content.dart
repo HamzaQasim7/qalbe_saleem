@@ -9,10 +9,11 @@ class BodyWidgetContent extends StatelessWidget {
   const BodyWidgetContent({
     super.key,
     required this.md,
+    required this.largeText,
   });
 
   final Size md;
-
+  final String largeText;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -53,9 +54,10 @@ class BodyWidgetContent extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  const Text(
-                    KAppTexts.isharTashakkorLong,
-                    style: TextStyle(
+                  Text(
+                    largeText,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.w600,
                     ),

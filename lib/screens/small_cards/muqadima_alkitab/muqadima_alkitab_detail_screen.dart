@@ -23,18 +23,22 @@ class MuqadimaAlkitabDetailScreen extends StatelessWidget {
               width: md.width,
               height: md.height * 0.3,
               decoration: const BoxDecoration(
-                color: Colors.blue,
+                color: Colors.indigo,
               ),
             ),
           ),
           TopHeaderWidget(
             md: md,
             imageUrl: KAppImages.muqadimaBook,
-            imageColor: Colors.purple.shade900,
+            imageColor: Colors.indigo,
             title: KAppTexts.muqadima_kitab,
+            iconColor: Colors.indigo,
           ),
           const SubHeaderWidget(),
-          BodyWidget(md: md),
+          BodyWidget(
+            md: md,
+            largeText: KAppTexts.muqadimaAlkitabLongText,
+          ),
         ],
       ),
     );

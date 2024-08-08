@@ -23,7 +23,7 @@ class IzharTashkorDetailScreen extends StatelessWidget {
               width: md.width,
               height: md.height * 0.3,
               decoration: BoxDecoration(
-                color: Colors.blue.shade900,
+                color: Colors.purple.shade900,
               ),
             ),
           ),
@@ -32,9 +32,13 @@ class IzharTashkorDetailScreen extends StatelessWidget {
             imageUrl: KAppImages.stars,
             imageColor: Colors.purple.shade900,
             title: KAppTexts.izhar_tashhakor,
+            iconColor: Colors.purple.shade900,
           ),
           const SubHeaderWidget(),
-          BodyWidget(md: md),
+          BodyWidget(
+            md: md,
+            largeText: KAppTexts.izharTashakkorLongText,
+          ),
         ],
       ),
     );

@@ -32,9 +32,13 @@ class AqwalOIrshadatDetailScreen extends StatelessWidget {
             imageUrl: KAppImages.stars,
             imageColor: Colors.purple.shade900,
             title: KAppTexts.izhar_tashhakor,
+            iconColor: Colors.transparent,
           ),
           const SubHeaderWidget(),
-          BodyWidget(md: md),
+          BodyWidget(
+            md: md,
+            largeText: '',
+          ),
         ],
       ),
     );

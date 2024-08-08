@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:qalbe_saleem/constants/images/app_images.dart';
 import 'package:qalbe_saleem/constants/strings/app_strings.dart';
 
-import '../manqabat/manqabat_details/widgets/body_widget.dart';
-import '../manqabat/manqabat_details/widgets/sub_header.dart';
-import '../manqabat/manqabat_details/widgets/top_header.dart';
+import '../../../small_cards/manqabat/manqabat_details/widgets/body_widget.dart';
+import '../../../small_cards/manqabat/manqabat_details/widgets/sub_header.dart';
+import '../../../small_cards/manqabat/manqabat_details/widgets/top_header.dart';
 
-class PesheLafazDetailScreen extends StatelessWidget {
-  const PesheLafazDetailScreen({super.key});
-
-  final String routeName = "/peshe_lafaz_detail";
-
+class ShajraHasebiyaDetailScreen extends StatelessWidget {
+  const ShajraHasebiyaDetailScreen({super.key});
+  final String routeName = "/shajra_hasebiya_detail";
   @override
   Widget build(BuildContext context) {
     final md = MediaQuery.of(context).size;
@@ -25,21 +23,21 @@ class PesheLafazDetailScreen extends StatelessWidget {
               width: md.width,
               height: md.height * 0.3,
               decoration: BoxDecoration(
-                color: Colors.green.shade600,
+                color: Colors.blue.shade900,
               ),
             ),
           ),
           TopHeaderWidget(
             md: md,
-            imageColor: Colors.green.shade600,
-            imageUrl: KAppImages.pesheLafaz,
-            title: KAppTexts.paysh_alfaz,
-            iconColor: Colors.green.shade600,
+            imageUrl: KAppImages.stars,
+            imageColor: Colors.purple.shade900,
+            title: KAppTexts.izhar_tashhakor,
+            iconColor: Colors.transparent,
           ),
           const SubHeaderWidget(),
           BodyWidget(
             md: md,
-            largeText: KAppTexts.pesheLafazLongText,
+            largeText: '',
           ),
         ],
       ),
